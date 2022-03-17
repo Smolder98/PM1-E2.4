@@ -7,12 +7,40 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="MENU PRINCIPAL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/btnNuevaFirma"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="nueva firma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".15"
+        />
+
+    <Button
+        android:id="@+id/btnListaFirmas"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Lista de firmas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNuevaFirma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".15"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

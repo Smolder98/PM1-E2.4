@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PM1E24">
         <activity
+            android:name=".ListaFirmasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NuevaFirmaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
