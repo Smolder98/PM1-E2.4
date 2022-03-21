@@ -19,7 +19,6 @@ public class Lienzo extends View {
     private int paintColor = 0xFF000000;
     private Canvas drawCanvas;
     private Bitmap canvasBitmap;
-    private static boolean borrado=false;
 
     private boolean limpio = true;
 
@@ -28,14 +27,6 @@ public class Lienzo extends View {
         setupDrawing();
     }
 
-    public static void setErase(boolean estadoborrado){
-        borrado = estadoborrado;
-        if(borrado = estadoborrado){
-            drawPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-        }else{
-            drawPaint.setXfermode(null);
-        }
-    }
 
     private void setupDrawing(){
         drawPath = new Path();
